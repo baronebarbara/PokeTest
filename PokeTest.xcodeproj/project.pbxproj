@@ -21,6 +21,7 @@
 		B135346C26A63AE5005AFAE3 /* PokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135346626A63AE5005AFAE3 /* PokeViewController.swift */; };
 		B135346D26A63AE5005AFAE3 /* PokeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135346726A63AE5005AFAE3 /* PokeInteractor.swift */; };
 		B135346E26A63AE5005AFAE3 /* PokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135346826A63AE5005AFAE3 /* PokeService.swift */; };
+		B135347126A64076005AFAE3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135347026A64076005AFAE3 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B135346626A63AE5005AFAE3 /* PokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeViewController.swift; sourceTree = "<group>"; };
 		B135346726A63AE5005AFAE3 /* PokeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeInteractor.swift; sourceTree = "<group>"; };
 		B135346826A63AE5005AFAE3 /* PokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeService.swift; sourceTree = "<group>"; };
+		B135347026A64076005AFAE3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		B135346226A63AD3005AFAE3 /* Poke */ = {
 			isa = PBXGroup;
 			children = (
+				B135346F26A64039005AFAE3 /* Model */,
 				B135346326A63AE5005AFAE3 /* PokeCoordinator.swift */,
 				B135346426A63AE5005AFAE3 /* PokeFactory.swift */,
 				B135346526A63AE5005AFAE3 /* PokePresenter.swift */,
@@ -152,6 +155,14 @@
 				B135346826A63AE5005AFAE3 /* PokeService.swift */,
 			);
 			path = Poke;
+			sourceTree = "<group>";
+		};
+		B135346F26A64039005AFAE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B135347026A64076005AFAE3 /* Pokemon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				B135346E26A63AE5005AFAE3 /* PokeService.swift in Sources */,
 				B135346A26A63AE5005AFAE3 /* PokeFactory.swift in Sources */,
 				B135343326A63ABE005AFAE3 /* AppDelegate.swift in Sources */,
+				B135347126A64076005AFAE3 /* Pokemon.swift in Sources */,
 				B135343526A63ABE005AFAE3 /* SceneDelegate.swift in Sources */,
 				B135346926A63AE5005AFAE3 /* PokeCoordinator.swift in Sources */,
 				B135346C26A63AE5005AFAE3 /* PokeViewController.swift in Sources */,
