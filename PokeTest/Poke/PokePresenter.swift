@@ -19,15 +19,14 @@ private let coordinator: PokeCoordinating
 // MARK: - PokePresenting
 extension PokePresenter: PokePresenting {
     func present(pokemon: Pokemon) {
-        
+        viewController?.display(abilities: pokemon.abilities.description)
     }
     
     func presentError() {
-        
+        viewController?.displayError()
     }
     
     func nextStep(action: PokeAction) {
-        
+        coordinator.perform(action: action)
     }
-    
 }

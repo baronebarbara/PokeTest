@@ -1,7 +1,7 @@
 import Foundation
 
 protocol PokeInteracting: AnyObject {
-    func fetch(text: String?)
+    func fetch()
     func open()
 }
 
@@ -19,8 +19,20 @@ final class PokeInteractor {
 
 // MARK: - PokeInteracting
 extension PokeInteractor: PokeInteracting {
-    func fetch(text: String?) {
+    func fetch() {
+        guard featureFlag else {
+            presenter.presentError()
+            return
+        }
         
+        service.fetch { [weak self] result in
+            switch result {
+            case .success(let pokemon):
+                self?.presenter.present(pokemon: pokemon)
+            case .failure:
+                self?.presenter.presentError()
+            }
+        }
     }
     
     func open() {
