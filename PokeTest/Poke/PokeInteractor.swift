@@ -38,6 +38,4 @@ extension PokeInteractor: PokeInteracting {
     func open() {
         
     }
-    
-   
 }

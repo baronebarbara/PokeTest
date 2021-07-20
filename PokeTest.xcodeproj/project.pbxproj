@@ -22,6 +22,7 @@
 		B135346D26A63AE5005AFAE3 /* PokeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135346726A63AE5005AFAE3 /* PokeInteractor.swift */; };
 		B135346E26A63AE5005AFAE3 /* PokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135346826A63AE5005AFAE3 /* PokeService.swift */; };
 		B135347126A64076005AFAE3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135347026A64076005AFAE3 /* Pokemon.swift */; };
+		B135353326A794B4005AFAE3 /* PokeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135353226A794B4005AFAE3 /* PokeDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B135346726A63AE5005AFAE3 /* PokeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeInteractor.swift; sourceTree = "<group>"; };
 		B135346826A63AE5005AFAE3 /* PokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeService.swift; sourceTree = "<group>"; };
 		B135347026A64076005AFAE3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		B135353226A794B4005AFAE3 /* PokeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				B135346626A63AE5005AFAE3 /* PokeViewController.swift */,
 				B135346726A63AE5005AFAE3 /* PokeInteractor.swift */,
 				B135346826A63AE5005AFAE3 /* PokeService.swift */,
+				B135353226A794B4005AFAE3 /* PokeDescriptionViewController.swift */,
 			);
 			path = Poke;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B135343726A63ABE005AFAE3 /* ViewController.swift in Sources */,
+				B135353326A794B4005AFAE3 /* PokeDescriptionViewController.swift in Sources */,
 				B135346D26A63AE5005AFAE3 /* PokeInteractor.swift in Sources */,
 				B135346E26A63AE5005AFAE3 /* PokeService.swift in Sources */,
 				B135346A26A63AE5005AFAE3 /* PokeFactory.swift in Sources */,

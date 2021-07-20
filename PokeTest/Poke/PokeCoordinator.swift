@@ -1,6 +1,9 @@
+import Foundation
 import UIKit
 
-enum PokeAction {
+enum PokeAction: Equatable {
+    case open(featureFlag: Bool)
+    case close
 }
 
 protocol PokeCoordinating: AnyObject {
@@ -15,5 +18,15 @@ final class PokeCoordinator {
 // MARK: - PokeCoordinating
 extension PokeCoordinator: PokeCoordinating {
     func perform(action: PokeAction) {
+        switch action {
+        case .open(let featureFlag):
+            if featureFlag {
+                viewController?.present(PokeDescriptionViewController(), animated: true)
+            } else {
+                viewController?.dismiss(animated: true)
+            }
+        case .close:
+            viewController?.dismiss(animated: true)
+        }
     }
 }
