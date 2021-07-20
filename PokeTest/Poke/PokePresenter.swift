@@ -2,8 +2,9 @@ import Foundation
 
 protocol PokePresenting: AnyObject {
     var viewController: PokeDisplaying? { get set }
-    func displaySomething()
-    func didNextStep(action: PokeAction)
+    func present(pokemon: Pokemon)
+    func presentError()
+    func nextStep(action: PokeAction)
 }
 
 final class PokePresenter {
@@ -17,11 +18,16 @@ private let coordinator: PokeCoordinating
 
 // MARK: - PokePresenting
 extension PokePresenter: PokePresenting {
-    func displaySomething() {
-        viewController?.displaySomething()
+    func present(pokemon: Pokemon) {
+        
     }
     
-    func didNextStep(action: PokeAction) {
-        coordinator.perform(action: action)
+    func presentError() {
+        
     }
+    
+    func nextStep(action: PokeAction) {
+        
+    }
+    
 }
