@@ -36,6 +36,10 @@ extension PokeInteractor: PokeInteracting {
     }
     
     func open() {
-        
+        if featureFlag {
+            presenter.nextStep(action: .open(featureFlag: featureFlag))
+        } else {
+            presenter.nextStep(action: .close)
+        }
     }
 }
