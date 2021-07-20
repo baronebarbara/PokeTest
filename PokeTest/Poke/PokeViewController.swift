@@ -1,7 +1,8 @@
 import UIKit
 
 protocol PokeDisplaying: AnyObject {
-    func displaySomething()
+    func display(abilities: String)
+    func displayError()
 }
 
 final class PokeViewController: UIViewController {
@@ -12,12 +13,16 @@ final class PokeViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder: NSCoder) { nil }
 }
 
 // MARK: - PokeDisplaying
 extension PokeViewController: PokeDisplaying {
-    func displaySomething() { }
+    func display(abilities: String) {
+        
+    }
+    
+    func displayError() {
+        
+    }
 }
