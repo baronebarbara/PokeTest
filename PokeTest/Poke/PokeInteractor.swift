@@ -8,12 +8,12 @@ protocol PokeInteracting: AnyObject {
 final class PokeInteractor {
     private let service: PokeServicing
     private let presenter: PokePresenting
-    
-    var featureFlag: Bool = true
+    private let featureFlag: Bool
 
-    init(service: PokeServicing, presenter: PokePresenting) {
+    init(service: PokeServicing, presenter: PokePresenting, featureFlag: Bool) {
         self.service = service
         self.presenter = presenter
+        self.featureFlag = featureFlag
     }
 }
 

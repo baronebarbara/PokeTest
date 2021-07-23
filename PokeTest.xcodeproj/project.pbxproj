@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1200DE426AB444900496D60 /* PokeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1200DE326AB444900496D60 /* PokeInteractorTests.swift */; };
 		B135343326A63ABE005AFAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135343226A63ABE005AFAE3 /* AppDelegate.swift */; };
 		B135343526A63ABE005AFAE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135343426A63ABE005AFAE3 /* SceneDelegate.swift */; };
 		B135343726A63ABE005AFAE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135343626A63ABE005AFAE3 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1200DE326AB444900496D60 /* PokeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeInteractorTests.swift; sourceTree = "<group>"; };
 		B135342F26A63ABE005AFAE3 /* PokeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B135343226A63ABE005AFAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B135343426A63ABE005AFAE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				B135344926A63AC1005AFAE3 /* PokeTestTests.swift */,
 				B135344B26A63AC1005AFAE3 /* Info.plist */,
+				B1200DE326AB444900496D60 /* PokeInteractorTests.swift */,
 			);
 			path = PokeTestTests;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1200DE426AB444900496D60 /* PokeInteractorTests.swift in Sources */,
 				B135344A26A63AC1005AFAE3 /* PokeTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

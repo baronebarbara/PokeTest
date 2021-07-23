@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct Pokemon: Decodable {
+struct Pokemon: Decodable, Equatable {
     let abilities: [Ability]
 }
 
-struct Ability: Decodable {
+struct Ability: Decodable, Equatable {
     let ability: AbilityInfo
     let isHidden: Bool
     let slot: Int
 }
 
-struct AbilityInfo: Decodable {
+struct AbilityInfo: Decodable, Equatable {
     let name: String
     let url: String
 }

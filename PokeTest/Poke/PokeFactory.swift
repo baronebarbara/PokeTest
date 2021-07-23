@@ -5,7 +5,7 @@ enum PokeFactory {
         let service: PokeServicing = PokeService()
         let coordinator: PokeCoordinating = PokeCoordinator()
         let presenter: PokePresenting = PokePresenter(coordinator: coordinator)
-        let interactor = PokeInteractor(service: service, presenter: presenter)
+        let interactor = PokeInteractor(service: service, presenter: presenter, featureFlag: true)
         let viewController = PokeViewController(interactor: interactor)
 
         coordinator.viewController = viewController
