@@ -9,6 +9,7 @@ final class PokeInteractor {
     private let service: PokeServicing
     private let presenter: PokePresenting
     private let featureFlag: Bool
+    let url = URL(string: "https://pokeapi.co/api/v2/pokemon/charmander")
 
     init(service: PokeServicing, presenter: PokePresenting, featureFlag: Bool) {
         self.service = service
@@ -20,12 +21,12 @@ final class PokeInteractor {
 // MARK: - PokeInteracting
 extension PokeInteractor: PokeInteracting {
     func fetch() {
-        guard featureFlag else {
+        guard let url = url, featureFlag else {
             presenter.presentError()
             return
         }
         
-        service.fetch { [weak self] result in
+        service.fetch(model: Pokemon.self, url: url) { [weak self] result in
             switch result {
             case .success(let pokemon):
                 self?.presenter.present(pokemon: pokemon)

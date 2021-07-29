@@ -13,6 +13,11 @@ final class PokeViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        interactor.fetch()
+    }
+    
     required init?(coder: NSCoder) { nil }
 }
 
